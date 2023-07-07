@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" id="txt" oninput="yt()">
+        <p id="wx"> The square is : </p>
+        <p id="d">0</p>
+        
+        <style>
+            #txt {
+                height: 20%;
+                font-size: 20px;
+                color: aqua;
+            }
+          #wx {
+            font-size: 30px;
+            color: blueviolet;
+          }
+          #d {
+            font-style: italic;
+            font-size: 20px;
+            color: rgb(177, 227, 14);
+          } 
+        </style>
+        <script>
+            function yt() {
+                let c= document.getElementById("txt").value;
+                y=c*c;
+                document.getElementById("d").innerHTML= y ;
+                console.log(y);
+            
+            }
+        </script>
+    </body>
+</html>
